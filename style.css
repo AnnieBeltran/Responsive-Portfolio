@@ -1,26 +1,71 @@
 /*Stylesheet for Homework 2
 */
 
+/* HEADER */
 
+header,
+{
+  position: relative;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background: #ebebeb;
+}
+
+h1 {
+font: 30px helvetica bold; 
+background-color: turquoise;
+display: block;
+padding: 10px;
+margin: 10px;
+width: 120px;
+
+}
+
+/*NAVIGATION BAR*/
 ul {
-    border: 5px solid red;
+    position: relative;
     list-style-type: none;
-    margin: 40px;
+    margin: 0;
     padding: 0;
-    width: 60px;
-} 
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
 
 li a {
     display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+/* FOOTER */
+.clear {
+    clear: both;
+}
+
+    footer {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background: #ebebeb;
+
 }
 
 
-.footer {
-    border: 5px solid red;
-    font-size: 50px bold black;
-
-}
-
+/* CONTACT PAGE */
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -54,3 +99,28 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
+/* Media Queries */
+body {
+    background-color: tan;
+  }
+  
+
+  @media screen and (max-width: 980px) {
+    body {
+      background-color: green;
+    }
+  }
+ 
+  @media screen and (max-width: 768px) {
+    body {
+      background-color: blue;
+    }
+  }
+  
+  
+  @media screen and (max-width: 640px) {
+    body {
+      background-color: olive;
+    }
+  }
